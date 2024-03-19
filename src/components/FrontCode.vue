@@ -21,9 +21,9 @@ export default {
 
   <div class="container">
     <div class="white-box">
-      <p>Kirjoita tekstisi tähän:</p>
-      <input v-model="userInput" type="text" placeholder="Kirjoita tähän...">
-      <button @click="submitText">Lähetä tekstisi</button>
+      <p>Submit a sentence for the sentiment analysis here</p>
+      <input v-model="userInput" type="text" placeholder="Write your sentence here...">
+      <button @click="submitText">SUBMIT</button>
     </div>
   </div>
 
@@ -40,6 +40,11 @@ export default {
   }
 }
 
+p {
+  font-size: 22px;
+  font-weight: 500;
+  font-family: monospace;
+}
 
 .container {
   display: flex;

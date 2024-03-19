@@ -1,19 +1,17 @@
 <script setup>
 import HelloWorld from './components/HelloWorld.vue'
 import TheWelcome from './components/TheWelcome.vue'
+import FrontCode from '.components/FrontCode.vue'
 </script>
 
 <template>
   <header>
-    <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
-
     <div class="wrapper">
       <HelloWorld msg="Lo hicimos! Cambiamos las cosas." />
     </div>
   </header>
 
   <main>
-    <TheWelcome />
     <FrontCode />
   </main>
 </template>
