@@ -6,13 +6,14 @@ import FrontCode from '.components/FrontCode.vue'
 
 <template>
   <header>
-    <div class="wrapper">
-      <HelloWorld msg="Lo hicimos! Cambiamos las cosas." />
-    </div>
+
   </header>
 
   <main>
-    <FrontCode />
+    <div class="wrapper">
+      <FrontCode />
+    </div>
+    
   </main>
 </template>
 
