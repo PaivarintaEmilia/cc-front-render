@@ -1,18 +1,5 @@
 <script setup>
 
-export default {
-  data() {
-    return {
-      userInput: ''
-      }
-  },
-  methods: {
-    submitText() {
-      // Tässä käsitellään käyttäjän syötteen lähettäminen
-      console.log(this.userInput);
-    }
-  }
-};
 
 
 </script>

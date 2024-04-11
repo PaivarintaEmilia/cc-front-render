@@ -1,22 +1,22 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
-import TheWelcome from './components/TheWelcome.vue'
-import FrontCode from '.components/FrontCode.vue'
+  import HelloWorld from './components/HelloWorld.vue'
+  import TheWelcome from './components/TheWelcome.vue'
+  import FrontCode from './components/FrontCode.vue'
 </script>
 
 <template>
-  <header>
-    <div class="wrapper">
-    
-    </div>
-  </header>
+<header>
+  <div class="wrapper">
+  
+  </div>
+</header>
 
-  <main>
-    <div class="wrapper">
-      <FrontCode />
-    </div>
-    
-  </main>
+<main>
+  <div class="wrapper">
+    <FrontCode />
+  </div>
+  
+</main>
 </template>
 
 <style scoped>
@@ -30,20 +30,20 @@ header {
 }
 
 @media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
+    header {
+      display: flex;
+      place-items: center;
+      padding-right: calc(var(--section-gap) / 2);
+    }
 
-  .logo {
-    margin: 0 2rem 0 0;
-  }
+    .logo {
+      margin: 0 2rem 0 0;
+    }
 
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
+    header .wrapper {
+      display: flex;
+      place-items: flex-start;
+      flex-wrap: wrap;
+    }
   }
-}
 </style>
