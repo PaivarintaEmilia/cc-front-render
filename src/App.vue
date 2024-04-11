@@ -6,7 +6,9 @@ import FrontCode from '.components/FrontCode.vue'
 
 <template>
   <header>
-
+    <div class="wrapper">
+    
+    </div>
   </header>
 
   <main>
