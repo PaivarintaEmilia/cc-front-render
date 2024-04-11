@@ -21,7 +21,7 @@ defineProps({
 
   <div class="container">
     <div class="white-box">
-      <p>Kirjoita tekstisi tähän:</p>
+      <p>Kirjoita tekstisi tähän: change</p>
       <input v-model="userInput" type="text" placeholder="Kirjoita tähän...">
       <button @click="submitText">Lähetä tekstisi</button>
     </div>
