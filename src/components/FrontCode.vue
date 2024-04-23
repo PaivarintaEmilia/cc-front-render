@@ -1,6 +1,20 @@
 <script setup>
 
+import { ref, Ref } from 'vue';
+import axios from 'axios'
 
+const userInput = ref('')
+const result = ref('')
+
+const submitText = async () => {
+  try {
+    const response = await axios.post('http://localhost:8080/analyze', { text: userInput.value })
+    result.value = response.data.result
+  } catch (error) {
+    console.error("Error:", error)
+    result.value = 'Error analyzing the text'
+  }
+}
 
 </script>
 
@@ -11,6 +25,8 @@
       <p>Submit a sentence for the sentiment analysis here</p>
       <input v-model="userInput" type="text" placeholder="Write your sentence here...">
       <button @click="submitText">SUBMIT</button>
+      <p>Analysis Result: {{ result }}</p>
+      
     </div>
   </div>
 
